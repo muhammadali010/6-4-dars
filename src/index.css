@@ -1,0 +1,104 @@
+body {
+  background: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+div {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+form button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #5b7cfb, #9465e3);
+  transform: scale(1.05);
+}
+
+form button:active {
+  transform: scale(0.95);
+}
+.user-cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.user-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 250px; 
+  min-height: 150px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  text-align: center;
+}
+
+.user-card h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-card p {
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.user-card button {
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.user-card button:hover {
+  background-color: #c0392b;
+}
+
+
